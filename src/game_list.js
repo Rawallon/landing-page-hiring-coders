@@ -38,7 +38,7 @@ ReactDOM.render(
   [...Array(4)].map((x, i) => (
     <GameProduct
       key={i}
-      picture={`/assets/games/rockstar/game_${i + 1}.jpg`}
+      picture={`./assets/games/rockstar/game_${i + 1}.jpg`}
       fullPrice={Math.floor(Math.random() * (300 - 100 + 1)) + 100 + 0.99}
       discountPrice={Math.floor(Math.random() * (100 - 50 + 1)) + 50 + 0.07}
     />
@@ -51,7 +51,7 @@ ReactDOM.render(
   [...Array(4)].map((x, i) => (
     <GameProduct
       key={i}
-      picture={`/assets/games/devolver/game_${i + 1}.jpg`}
+      picture={`./assets/games/devolver/game_${i + 1}.jpg`}
       fullPrice={Math.floor(Math.random() * (100 - 70 + 1)) + 100 + 0.99}
       discountPrice={Math.floor(Math.random() * (70 - 25 + 1)) + 25 + 0.07}
     />
