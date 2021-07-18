@@ -52,6 +52,10 @@ a {
   justify-content: space-between;
   align-items: center;
 }
+.newsletter img {
+  width: 50%;
+  height: auto;
+}
 
 .form {
   background: var(--terciary);
@@ -137,6 +141,7 @@ a {
 .game-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* Game card */
@@ -240,4 +245,57 @@ a {
 }
 #footer a {
   color: var(--secondary);
+}
+
+@media (max-width: 576px) {
+  :root {
+    font-size: 12px !important;
+  }
+  #header {
+    height: 50px;
+  }
+  #header img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #header img {
+    width: auto;
+    height: 50%;
+  }
+  .container {
+    max-width: 720px;
+  }
+  .newsletter img {
+    display: none;
+  }
+  .game-list,
+  .newsletter {
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .game-card {
+    width: 292px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
 }
