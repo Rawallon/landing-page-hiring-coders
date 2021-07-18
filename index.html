@@ -22,7 +22,7 @@
         <img src="/assets/illustration.png" alt="" draggable="false">
         <div class="form">
           <p>Cadastre-se para receber nossas ofertas da Black Friday</p>
-          <form action="#" method="POST">
+          <form onsubmit="return submitForm()">
             <label for="name">Nome</label>
             <input type="text" id="name" name="name">
             <label for="email">Email</label>
@@ -62,6 +62,7 @@
   <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
   <script src="game_list.js" defer></script>
+  <script src="form_newsletter.js" defer></script>
 </body>
 
 </html>
