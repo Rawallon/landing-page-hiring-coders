@@ -43,32 +43,20 @@
       <div class="container">
         <div class="producer-list">
           <h1>Rockstar Games</h1>
-
-
-          <div class="game-list">
-            <div class="game-card">
-              <div class="game-image">
-                <img src="/assets/games/rockstar/game_1.jpg" alt="">
-              </div>
-              <div class="game-details">
-                <div class="game-price">
-                  <div class="game-discount">-45%</div>
-                  <div>
-                    <div class="game-price--full">R$ 39,99</div>
-                    <div class="game-price--discount">R$ 22,07</div>
-                  </div>
-                </div>
-                <div class="game-retailer">
-                  <img src="/assets/steam.png" alt="">
-                </div>
-              </div>
-              <button class="game-button">Comprar</button>
-            </div>
+          <div class="game-list" id="rockstar-game-list">
+          </div>
+        </div>
+        <div class="producer-list">
+          <h1>Devolver Digital</h1>
+          <div class="game-list" id="devolver-game-list">
           </div>
         </div>
       </div>
     </section>
   </main>
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="game_list.js" defer></script>
 </body>
 
 </html>
