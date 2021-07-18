@@ -118,21 +118,27 @@ a {
 .games {
   background: var(--terciary);
   padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .games .producer-list {
   text-align: center;
+  margin-bottom: 4rem;
 }
 .games .producer-list h1 {
   font-weight: bold;
   font-size: 48px;
   line-height: 65px;
   text-transform: uppercase;
+  margin:0 0 1.5rem 0;
 }
 .game-list {
   display: flex;
   justify-content: space-between;
 }
+
 /* Game card */
 .game-card {
   cursor: pointer;
@@ -207,10 +213,31 @@ a {
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
+  color: #000;
 
   cursor: pointer;
   user-select: none;
 }
 .game-button:hover {
   background: var(--secondary-active);
+}
+
+.show-more-button{
+  color: #000;
+  border-radius: 4px;
+  min-width: 320px;
+}
+
+#footer {
+  background: var(--primary);
+  width: 100%;
+  height: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+#footer a{
+  color: var(--secondary);
 }
